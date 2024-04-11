@@ -4,8 +4,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("Tile_com.kakaogames.gdts_.jpg");
+  background-image: url("thumbnail2.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ form {
     255,
     255,
     255,
-    0.5
+    0.8
   ); /* Mengatur warna latar belakang form menjadi semi transparan */
   padding: 20px;
   margin-bottom: 20px;
@@ -30,6 +31,7 @@ form {
   justify-content: center;
   align-items: center; /* Menengahkan elemen form */
   width: 300px;
+  height: 400px;
   transition: all 0.3s; /* Menambahkan efek transisi */
 }
 
@@ -96,20 +98,8 @@ input:focus {
 /* Animasi untuk judul h1 */
 h1 {
   font-size: 24px;
-  color: #333;
+  color: white;
   text-align: center;
   margin-bottom: 20px;
-  animation: colorChange 2s infinite;
-}
-
-@keyframes colorChange {
-  0% {
-    color: #333;
-  }
-  50% {
-    color: #4caf50;
-  }
-  100% {
-    color: #333;
-  }
+  text-shadow: 2px 2px 4px #4caf50; /* User: buat warna h1 menjadi terlihat */
 }
